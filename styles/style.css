@@ -103,6 +103,10 @@ header {
     transition: 0.5s;
 }
 
+.buttons img {
+    display: none;
+}
+
 .slider {
     -webkit-appearance: none;
     width: 100%;
