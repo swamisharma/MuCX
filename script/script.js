@@ -142,13 +142,13 @@ searchbar.addEventListener("keyup", (e) => {
 audioElement.addEventListener('timeupdate', ()=>{ 
     let progress = parseInt((audioElement.currentTime/audioElement.duration)*1000); 
     slider.value = progress;
-    // timeSpan[0].textContent = `${Math.floor(audioElement.currentTime/60)}:${Math.floor(audioElement.currentTime%60).toLocaleString('en-US', {
-    //     minimumIntegerDigits: 2,
-    //     useGrouping: false
-    // })}`;
+    timeSpan[0].textContent = `${Math.floor(audioElement.currentTime/60)}:${Math.floor(audioElement.currentTime%60).toLocaleString('en-US', {
+        minimumIntegerDigits: 2,
+        useGrouping: false
+    })}`;
 })
 
-myProgressBar.addEventListener('change', ()=>{
+slider.addEventListener('change', ()=>{
     audioElement.currentTime = slider.value * audioElement.duration/1000;
     //timeSpan[0].textContent = `${Math.floor(audioElement.currentTime/60)}:${Math.floor(audioElement.currentTime%60)}`;
 })
