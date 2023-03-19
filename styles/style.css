@@ -593,7 +593,7 @@ input:focus {
     }
 }
 
-@media only screen and (min-width: 400px) and (max-width: 450px) {
+@media only screen and (min-width: 400px) and (max-width: 550px) {
     header {
         margin: 0 10px;
         height: 10vh;
