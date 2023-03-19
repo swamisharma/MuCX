@@ -22,8 +22,11 @@ overlay.addEventListener("click", () => {
 
 //PLAYLIST-SIDE-BAR-CONTENT
 let playlistContentDiv = document.querySelector(".playlist-content");
+let count = 0;
+
 playList.forEach((song) => {
     let playlistSongDetail = document.createElement("div");
+    playlistSongDetail.classList.add(`${count}`);
     playlistSongDetail.classList.add("playlist-song-detail");
     
     let contentSongImg = document.createElement("div");
@@ -50,6 +53,7 @@ playList.forEach((song) => {
     playlistSongDetail.appendChild(contentSongDetail);
     
     playlistContentDiv.appendChild(playlistSongDetail);
+    count++
 })
 
 //PLAYLIST-SEARCH-FEATURE

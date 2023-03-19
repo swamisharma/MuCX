@@ -1,5 +1,15 @@
 const playlist = [
     {
+        name: "Dil Galti Kar Baitha hai",
+        cover:
+            "https://is3-ssl.mzstatic.com/image/thumb/Music125/v4/c7/83/bd/c783bd16-31bf-6980-72bc-3b82ad79b9f9/source/600x600bb.jpg",
+        artist: "JalRaj",
+        audio:
+            "https://res.cloudinary.com/blazzingcdn/video/upload/v1638806016/Songs/X2Download.com_-_Dil_Galti_Kar_Baitha_hai_Reprise_-_JalRaj_-_Latest_Hindi_Cover_2021_-REUPLOAD-_128_kbps_wmewm8.mp3",
+        color: ["#F7CBE2", "#D34156"],
+        liked: false,
+    },
+    {
         name: "Nazm Nazm",
         cover:
             "https://a10.gaanacdn.com/images/song/25/22348025/crop_480x480_1516002143.jpg",
@@ -7,16 +17,6 @@ const playlist = [
         audio:
             "https://res.cloudinary.com/blazzingcdn/video/upload/v1638805635/Songs/Nazm_Nazm_Feat._Ayushmann_Khurrana_Bareilly_Ki_Barfi_320_Kbps_nwbsh8.mp3",
         color: ["#978B51", "#CFCAAD"],
-        liked: false,
-    },
-    {
-        name: "Dil Galti Kar Baitha hai (Reprise)",
-        cover:
-            "https://is3-ssl.mzstatic.com/image/thumb/Music125/v4/c7/83/bd/c783bd16-31bf-6980-72bc-3b82ad79b9f9/source/600x600bb.jpg",
-        artist: "JalRaj",
-        audio:
-            "https://res.cloudinary.com/blazzingcdn/video/upload/v1638806016/Songs/X2Download.com_-_Dil_Galti_Kar_Baitha_hai_Reprise_-_JalRaj_-_Latest_Hindi_Cover_2021_-REUPLOAD-_128_kbps_wmewm8.mp3",
-        color: ["#F7CBE2", "#D34156"],
         liked: false,
     },
     {

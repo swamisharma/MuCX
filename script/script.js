@@ -24,17 +24,6 @@ play_pause.addEventListener("click", () => {
 //PAGE-LOAD
 document.querySelector("body").addEventListener("load", pageSetUp());
 
-function pageSetUp(){
-    let imgDiv = document.querySelector(".song-cover");
-    let newImg = document.createElement("img");
-
-    newImg.setAttribute('src', playList[0].cover);
-    imgDiv.appendChild(newImg);
-
-    document.querySelector(".song-name").textContent = playList[currentSong].name;
-    document.querySelector(".song-artist").textContent = playList[currentSong].artist;
-}
-
 //SONG-TRAVERSING
 let backButton = document.querySelector(".fa-backward-step");
 let forwardButton = document.querySelector(".fa-forward-step");
@@ -43,32 +32,40 @@ backButton.addEventListener("click", () => {
     if (currentSong > 0){
         currentSong--;
     }
-    audioElement.src = playList[currentSong].audio;
-    // audioElement.play();
+    onSongChange();
+    debounce(changeSongMedia());
 });
 
 forwardButton.addEventListener("click", () => {
     if (currentSong < playList.length-1){
         currentSong++;
     }
-    audioElement.src = playList[currentSong].audio;
-    // audioElement.play();
+    else {
+        currentSong = 0;
+    }
+    onSongChange();
+    debounce(changeSongMedia());
 });
 
-//SONG-DETAILS-RENDERING
+//PLAY-SONG-FROM-PLAYLIST
+let playlistdiv = document.querySelectorAll(".playlist-song-detail");
+
+playlistdiv.forEach((div) => {
+    div.addEventListener("click", () => {
+        currentSong = div.classList[0];
+        onSongChange();
+        changeSongMedia();
+    });
+})
+
+//SONG-MEDIA-LOADING
 audioElement.addEventListener("loadeddata", () => {
     document.querySelector(".play-pause").style.display = "flex";
     document.querySelector(".buttons img").style.display = "none";
-    
-    document.querySelector(".song-cover img").remove();
-    let imgDiv = document.querySelector(".song-cover");
 
-    let newImg = document.createElement("img");
-    newImg.setAttribute('src', playList[currentSong].cover);
-    imgDiv.appendChild(newImg);
+    slider.value = 0;
+    highlightSongInPlaylist();
 
-    document.querySelector(".song-name").textContent = playList[currentSong].name;
-    document.querySelector(".song-artist").textContent = playList[currentSong].artist;
     timeSpan[1].textContent = `${Math.floor(audioElement.duration/60)}:${Math.floor(audioElement.duration%60).toLocaleString('en-US', {
         minimumIntegerDigits: 2,
         useGrouping: false
@@ -82,19 +79,15 @@ audioElement.addEventListener("loadeddata", () => {
     }
 });
 
-// audioElement.addEventListener("play", () => {
-//     document.querySelector(".play-pause").style.display = "flex";
-//     document.querySelector(".buttons img").style.display = "none";
-// });
-
 audioElement.addEventListener("ended", () => {
     if (currentSong < playList.length-1){
         currentSong++;
     }
+    onSongChange();
     audioElement.src = playList[currentSong].audio;
 });
 
-audioElement.addEventListener("progress", () => {
+audioElement.addEventListener("loadstart", () => {
     document.querySelector(".play-pause").style.display = "none";
     document.querySelector(".buttons img").style.display = "flex";
 });
@@ -107,9 +100,51 @@ audioElement.addEventListener('timeupdate', ()=>{
         minimumIntegerDigits: 2,
         useGrouping: false
     })}`;
-})
+});
 
 slider.addEventListener('change', ()=>{
     audioElement.currentTime = slider.value * audioElement.duration/1000;
     timeSpan[0].textContent = `${Math.floor(audioElement.currentTime/60)}:${Math.floor(audioElement.currentTime%60)}`;
-})
+});
+
+//DEBOUNCE-AND-OTHER-CALLBACK-FUNC
+function debounce(func, timeout=300) {
+    let timer;
+    return () => {
+        clearTimeout(timer);
+        timer = setTimeout(() => {func()}, timeout);
+    }
+};
+
+function onSongChange() {
+    document.querySelector(".song-cover img").remove();
+    let imgDiv = document.querySelector(".song-cover");
+
+    let newImg = document.createElement("img");
+    newImg.setAttribute('src', playList[currentSong].cover);
+    imgDiv.appendChild(newImg);
+
+    document.querySelector(".song-name").textContent = playList[currentSong].name;
+    document.querySelector(".song-artist").textContent = playList[currentSong].artist;
+};
+
+function changeSongMedia() {
+    audioElement.src = playList[currentSong].audio;
+};
+
+function pageSetUp() {
+    let imgDiv = document.querySelector(".song-cover");
+    let newImg = document.createElement("img");
+
+    newImg.setAttribute('src', playList[0].cover);
+    imgDiv.appendChild(newImg);
+
+    document.querySelector(".song-name").textContent = playList[currentSong].name;
+    document.querySelector(".song-artist").textContent = playList[currentSong].artist;
+    document.querySelectorAll(".playlist-song-detail")[currentSong].classList.add("current-playing");
+};
+
+function highlightSongInPlaylist() {
+    document.querySelector(".current-playing").classList.remove("current-playing");
+    document.querySelectorAll(".playlist-song-detail")[currentSong].classList.add("current-playing");
+};
