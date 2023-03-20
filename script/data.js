@@ -832,7 +832,7 @@ const playlist = [
     {
         name: "Enchanted",
         cover: "https://i.scdn.co/image/ab67616d0000b273e11a75a2f2ff39cec788a015",
-        artist: "Swati Mehul",
+        artist: "Taylor Swift",
         audio:
             "https://dl.sndup.net/crym/Enchanted.mp3",
         color: ["#1C1A1D", "#757376"],
