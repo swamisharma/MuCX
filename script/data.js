@@ -769,6 +769,366 @@ const playlist = [
 
         liked: false,
     },
+    {
+        name: "Ik Lamha",
+        cover: "https://c.saavncdn.com/905/Ik-Lamha-Hindi-2021-20211224024607-500x500.jpg",
+        artist: "Azaan Salim Khan",
+        audio:
+            "https://dl.sndup.net/rrn8/Aaram%20Aata%20Hai%20Deedar%20Se%20Tere%20Lyrics.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Aatma Rama",
+        cover: "https://is3-ssl.mzstatic.com/image/thumb/Music116/v4/41/ef/0e/41ef0e30-1ab4-34e3-8695-ef330ed13bf5/artwork.jpg/1200x1200bf-60.jpg",
+        artist: "Brodha V",
+        audio:
+            "https://dl.sndup.net/gs28/Brodha%20V%20-%20Aathma%20Raama%20[Music%20Video].mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Kana Yari",
+        cover: "https://i.scdn.co/image/ab67616d0000b2730407e4b278400d17970a38af",
+        artist: "Eva B | Kaifi Khalil",
+        audio:
+            "https://dl.sndup.net/vzhp/Coke%20Studio%20%20Season%2014%20%20Kana%20Yaari.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Creepin",
+        cover: "https://i.scdn.co/image/ab67616d0000b273fac968e3a62f56e030b3931d",
+        artist: "The Weeknd | Diddy",
+        audio:
+            "https://dl.sndup.net/fr4f/Creepin'.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Dil nu",
+        cover: "https://www.pagalwoird.com/wp-content/uploads/2022/10/maxresdefault-22__01.jpg",
+        artist: "AP Dhillon",
+        audio:
+            "https://dl.sndup.net/vj32/Dil%20Nu(Lyrics)%20-%20AP%20Dhillon.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Ek Radha Ek Meera",
+        cover: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuonTw--zs3-_4rPnbeEhOUkK9VnAHgjD1Cg&usqp=CAU",
+        artist: "Swati Mehul",
+        audio:
+            "https://dl.sndup.net/qypx/Ek%20Radha%20Ek%20Meera.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Enchanted",
+        cover: "https://i.scdn.co/image/ab67616d0000b273e11a75a2f2ff39cec788a015",
+        artist: "Swati Mehul",
+        audio:
+            "https://dl.sndup.net/crym/Enchanted.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Faith",
+        cover: "https://pbs.twimg.com/media/FFE__aSXwAcFcSw.jpg",
+        artist: "The Weeknd",
+        audio:
+            "https://dl.sndup.net/cs4q/Faith.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Last Breath",
+        cover: "https://i1.sndcdn.com/artworks-000506100843-y0h335-t500x500.jpg",
+        artist: "Future",
+        audio:
+            "https://dl.sndup.net/59bj/Last%20Breath.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "All The Stars",
+        cover: "https://images.genius.com/bd3eb1cc914cca2ea8cad1f301b6b88b.1000x1000x1.png",
+        artist: "Kendrick Lamar | SZA",
+        audio:
+            "https://dl.sndup.net/g9ds/All%20The%20Stars.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Beete Lamhe (Slowed)",
+        cover: "https://i1.sndcdn.com/artworks-RPz3cYg32Kjns8NQ-Z9BPHA-t500x500.jpg",
+        artist: "KK",
+        audio:
+            "https://dl.sndup.net/g67d/KK%20-%20Beetein%20Lamhein.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Labon Ko (Slowed)",
+        cover: "https://i1.sndcdn.com/artworks-RPz3cYg32Kjns8NQ-Z9BPHA-t500x500.jpg",
+        artist: "KK",
+        audio:
+            "https://dl.sndup.net/mj8w/Labon%20Ko.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Moth to A Flame",
+        cover: "https://i.redd.it/op2ybwfjhnv71.jpg",
+        artist: "The Weeknd",
+        audio:
+            "https://dl.sndup.net/r47d/Moth%20To%20A%20Flame.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Nothing Compares | Final Lullaby (Slowed)",
+        cover: "https://i.redd.it/op2ybwfjhnv71.jpg",
+        artist: "The Weeknd",
+        audio:
+            "https://dl.sndup.net/ty8h/Nothing%20Compares%20%20Final%20Lullaby.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "O Sanam",
+        cover: "https://images.genius.com/d57855da6a6000e9683cda0a12089ace.999x999x1.jpg",
+        artist: "Lucky Ali",
+        audio:
+            "https://dl.sndup.net/zffm/O%20Sanam%20Lucky%20Ali.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Ram Siya Ram (Reverbed)",
+        cover: "https://i1.sndcdn.com/artworks-Lgdaig9D73SzDpv3-RvGJJQ-t500x500.jpg",
+        artist: "Paras Sharma",
+        audio:
+            "https://dl.sndup.net/gfzv/Ram%20Siya%20Ram.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Ranjha Ranjha",
+        cover: "https://c.saavncdn.com/249/Raavan-Hindi-2010-20221211095418-500x500.jpg",
+        artist: "Rekha Bhardwaj",
+        audio:
+            "https://dl.sndup.net/pdbm/RANJHA%20RANJHA.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Runnin",
+        cover: "https://images.genius.com/a482d648c4b21447ae97b6918b1210bd.1000x1000x1.jpg",
+        artist: "A$AP Rocky| A$AP Ferg | Nicki Minaj",
+        audio:
+            "https://dl.sndup.net/6vy2/Runnin.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Feel me",
+        cover: "https://pbs.twimg.com/media/ERRlPWqUEAIycti.jpg",
+        artist: "Selena Gomez",
+        audio:
+            "https://dl.sndup.net/nm68/Feel%20Me.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Fetish",
+        cover: "https://images.genius.com/6046e607826f1c36f2d089a1ec1b121f.1000x1000x1.png",
+        artist: "Selena Gomez",
+        audio:
+            "https://dl.sndup.net/2f7p/Fetish.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Kinda Crazy",
+        cover: "https://images.genius.com/de9ff0f6370f2171757a9cdd2aa484bf.680x680x1.jpg",
+        artist: "Selena Gomez",
+        audio:
+            "https://dl.sndup.net/h4nx/Kinda%20Crazy.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Souvenir",
+        cover: "https://images.genius.com/de9ff0f6370f2171757a9cdd2aa484bf.680x680x1.jpg",
+        artist: "Selena Gomez",
+        audio:
+            "https://dl.sndup.net/g8m6/Souvenir.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Shikdum",
+        cover: "https://a10.gaanacdn.com/gn_img/albums/0wrb4qNKLg/wrb4L0ybLg/size_l.jpg",
+        artist: "Shreya Ghoshal | Shaan",
+        audio:
+            "https://dl.sndup.net/xkjz/Shikdum.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Sober",
+        cover: "https://i1.sndcdn.com/artworks-000133092739-p5rarl-t500x500.jpg",
+        artist: "Selena Gomez",
+        audio:
+            "https://dl.sndup.net/dgkd/Sober.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Starboy",
+        cover: "https://i.seadn.io/gae/fy0EYmpeGXjFLu-eZ0uP8Zcl9_II0mxb9SYuRP7RZ4O06dRn3udf83dAxuySOtnfL_68zheKzsG-XT0l5e8R9dJ93b0Kw_MEzKO-ow?auto=format&w=1000",
+        artist: "The Weeknd | Daft Punk",
+        audio:
+            "https://dl.sndup.net/wcyt/Starboy.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Escape from LA",
+        cover: "https://images.genius.com/4455a314edfff1a63c30f03d9d135c64.1000x1000x1.jpg",
+        artist: "The Weeknd",
+        audio:
+            "https://dl.sndup.net/hyh4/The%20Weeknd%20-%20Escape%20From%20LA%20(Audio).mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "I Feel It Coming",
+        cover: "https://f4.bcbits.com/img/a3646466332_65",
+        artist: "The Weeknd",
+        audio:
+            "https://dl.sndup.net/ms9z/I%20Feel%20It%20Coming.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "In The Night",
+        cover: "https://i.scdn.co/image/ab67616d0000b273aac98daa18e4edf54d7a0a70",
+        artist: "The Weeknd",
+        audio:
+            "https://dl.sndup.net/mzmm/In%20The%20Night.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Reminder",
+        cover: "https://m.media-amazon.com/images/M/MV5BYTJlOTRhZTItOTg5Zi00Mzc3LWE2M2ItYTRiOWE5YzQ5MzM4XkEyXkFqcGdeQXVyNjE0ODc0MDc@._V1_.jpg",
+        artist: "The Weeknd",
+        audio:
+            "https://dl.sndup.net/fh77/Reminder.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Secrets",
+        cover: "https://i.redd.it/hf5roqmk1pvx.png",
+        artist: "The Weeknd | Daft Punk",
+        audio:
+            "https://dl.sndup.net/k7kw/Secrets.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Try Me",
+        cover: "https://i1.sndcdn.com/artworks-0UHHMfsqPdq358Xx-40y7QA-t500x500.jpg",
+        artist: "The Weeknd",
+        audio:
+            "https://dl.sndup.net/9b49/Try%20Me.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Wicked Games",
+        cover: "https://i.scdn.co/image/ab67616d0000b273274b406a7e18acebcf743079",
+        artist: "The Weeknd",
+        audio:
+            "https://dl.sndup.net/svw9/Wicked%20Games.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "The Zone",
+        cover: "https://live.staticflickr.com/6191/6066984877_99d28aa453_b.jpg",
+        artist: "The Weeknd | Drake",
+        audio:
+            "https://dl.sndup.net/mf38/The%20Zone.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Pray For Me",
+        cover: "https://i1.sndcdn.com/artworks-000332447709-iulhry-t500x500.jpg",
+        artist: "The Weeknd | Kendrick Lamar",
+        audio:
+            "https://dl.sndup.net/py94/Pray%20For%20Me.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Too Late | Hardest To Love",
+        cover: "https://i.redd.it/t5phsjz13wg31.jpg",
+        artist: "The Weeknd",
+        audio:
+            "https://dl.sndup.net/p5v7/Too%20late%20%20Hardest%20To%20Love.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Tu hi meri shab hai",
+        cover: "https://i0.wp.com/99lyricstore.com/wp-content/uploads/2021/04/Tu2Bhi2Bmeri2Bshab2Bhai2BHindi2BLove2BSong2BLyrics252C2BSung2BBy2BK.K.jpg",
+        artist: "KK",
+        audio:
+            "https://dl.sndup.net/vk6t/Tu%20Hi%20Meri%20Shab%20Hai.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    }
 ]
 
 export default playlist;
