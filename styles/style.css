@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    margin: 1% 0;
+    margin: 1vh 0;
     height: 10vh;
 }
 
@@ -35,8 +35,12 @@ header {
 }
 
 .play-area {
+    height: 88vh;
     width: 90%;
-    margin: 3% auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .song-details {
@@ -87,14 +91,14 @@ header {
     grid-template-columns: 60vh 1fr;
     grid-template-rows: 10vh;
     column-gap: 5%;
-    margin-top: 3.1%;
 }
 
 .buttons {
-    flex: 15%;
+    width: 42vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    justify-self: center;
 }
 
 .buttons img {
@@ -419,15 +423,20 @@ input:focus {
         font-size: 15px;
     }
 
+    .buttons {
+        width: 70%;
+        margin: 0 auto;
+    }
+
     .buttons i{
         display: flex;
         align-items: center;
-        font-size: 20px;
+        font-size: 25px;
         height: 80px;
     }
 
     .buttons img {
-        height: 20px;
+        height: 60px;
     }
 
     .playlist-side-bar {
@@ -660,15 +669,20 @@ input:focus {
         font-size: 15px;
     }
 
+    .buttons {
+        width: 70%;
+        margin: 0 auto;
+    }
+
     .buttons i{
         display: flex;
         align-items: center;
-        font-size: 20px;
+        font-size: 25px;
         height: 80px;
     }
 
     .buttons img {
-        height: 20px;
+        height: 60px;
     }
 
     .playlist-side-bar {
