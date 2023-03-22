@@ -1,5 +1,55 @@
 const playlist = [
     {
+        name: "All The Stars",
+        cover: "https://images.genius.com/bd3eb1cc914cca2ea8cad1f301b6b88b.1000x1000x1.png",
+        artist: "Kendrick Lamar | SZA",
+        audio:
+            "https://dl.sndup.net/g9ds/All%20The%20Stars.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Pray For Me",
+        cover: "https://i1.sndcdn.com/artworks-000332447709-iulhry-t500x500.jpg",
+        artist: "The Weeknd | Kendrick Lamar",
+        audio:
+            "https://dl.sndup.net/py94/Pray%20For%20Me.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Faith",
+        cover: "https://pbs.twimg.com/media/FFE__aSXwAcFcSw.jpg",
+        artist: "The Weeknd",
+        audio:
+            "https://dl.sndup.net/cs4q/Faith.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Last Breath",
+        cover: "https://i1.sndcdn.com/artworks-000506100843-y0h335-t500x500.jpg",
+        artist: "Future",
+        audio:
+            "https://dl.sndup.net/59bj/Last%20Breath.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Runnin",
+        cover: "https://images.genius.com/a482d648c4b21447ae97b6918b1210bd.1000x1000x1.jpg",
+        artist: "A$AP Rocky| A$AP Ferg | Nicki Minaj",
+        audio:
+            "https://dl.sndup.net/6vy2/Runnin.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
         name: "Dil Galti Kar Baitha hai",
         cover:
             "https://is3-ssl.mzstatic.com/image/thumb/Music125/v4/c7/83/bd/c783bd16-31bf-6980-72bc-3b82ad79b9f9/source/600x600bb.jpg",
@@ -85,17 +135,6 @@ const playlist = [
         audio:
             "https://res.cloudinary.com/blazzingcdn/video/upload/v1638792281/Songs/Raataan_Lambiyan_Shershaah_320_Kbps_bfpkmh.mp3",
         color: ["#715639", "#010101"],
-
-        liked: false,
-    },
-    {
-        name: "Chandigarh Kare Aashiqui",
-        cover:
-            "https://pagalnew.com/coverimages/album/chandigarh-kare-aashiqui-2021-500-500.jpg",
-        artist: "Jassi Sidhu | IP Singh",
-        audio:
-            "https://res.cloudinary.com/blazzingcdn/video/upload/v1638791928/Songs/Title_Track_Chandigarh_Kare_Aashiqui_320_Kbps_iohq42.mp3",
-        color: ["#9D06F3", "#F1068F"],
 
         liked: false,
     },
@@ -790,7 +829,7 @@ const playlist = [
         liked: false,
     },
     {
-        name: "Kana Yari",
+        name: "Kana Yaari",
         cover: "https://i.scdn.co/image/ab67616d0000b2730407e4b278400d17970a38af",
         artist: "Eva B | Kaifi Khalil",
         audio:
@@ -835,36 +874,6 @@ const playlist = [
         artist: "Taylor Swift",
         audio:
             "https://dl.sndup.net/crym/Enchanted.mp3",
-        color: ["#1C1A1D", "#757376"],
-
-        liked: false,
-    },
-    {
-        name: "Faith",
-        cover: "https://pbs.twimg.com/media/FFE__aSXwAcFcSw.jpg",
-        artist: "The Weeknd",
-        audio:
-            "https://dl.sndup.net/cs4q/Faith.mp3",
-        color: ["#1C1A1D", "#757376"],
-
-        liked: false,
-    },
-    {
-        name: "Last Breath",
-        cover: "https://i1.sndcdn.com/artworks-000506100843-y0h335-t500x500.jpg",
-        artist: "Future",
-        audio:
-            "https://dl.sndup.net/59bj/Last%20Breath.mp3",
-        color: ["#1C1A1D", "#757376"],
-
-        liked: false,
-    },
-    {
-        name: "All The Stars",
-        cover: "https://images.genius.com/bd3eb1cc914cca2ea8cad1f301b6b88b.1000x1000x1.png",
-        artist: "Kendrick Lamar | SZA",
-        audio:
-            "https://dl.sndup.net/g9ds/All%20The%20Stars.mp3",
         color: ["#1C1A1D", "#757376"],
 
         liked: false,
@@ -935,16 +944,6 @@ const playlist = [
         artist: "Rekha Bhardwaj",
         audio:
             "https://dl.sndup.net/pdbm/RANJHA%20RANJHA.mp3",
-        color: ["#1C1A1D", "#757376"],
-
-        liked: false,
-    },
-    {
-        name: "Runnin",
-        cover: "https://images.genius.com/a482d648c4b21447ae97b6918b1210bd.1000x1000x1.jpg",
-        artist: "A$AP Rocky| A$AP Ferg | Nicki Minaj",
-        audio:
-            "https://dl.sndup.net/6vy2/Runnin.mp3",
         color: ["#1C1A1D", "#757376"],
 
         liked: false,
@@ -1095,16 +1094,6 @@ const playlist = [
         artist: "The Weeknd | Drake",
         audio:
             "https://dl.sndup.net/mf38/The%20Zone.mp3",
-        color: ["#1C1A1D", "#757376"],
-
-        liked: false,
-    },
-    {
-        name: "Pray For Me",
-        cover: "https://i1.sndcdn.com/artworks-000332447709-iulhry-t500x500.jpg",
-        artist: "The Weeknd | Kendrick Lamar",
-        audio:
-            "https://dl.sndup.net/py94/Pray%20For%20Me.mp3",
         color: ["#1C1A1D", "#757376"],
 
         liked: false,
