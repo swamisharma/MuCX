@@ -432,7 +432,6 @@ input:focus {
         display: flex;
         align-items: center;
         font-size: 25px;
-        height: 80px;
     }
 
     .buttons img {
