@@ -1,6 +1,9 @@
 import playList from "./data.js";
 
 let currentSong = 0;
+if (localStorage.getItem("currentSong")){
+    currentSong = parseInt(localStorage.getItem("currentSong"));
+}
 let audioElement = new Audio(playList[currentSong].audio);
 let slider = document.querySelector(".slider");
 let timeSpan = document.querySelectorAll(".slider-bar span");
@@ -77,6 +80,8 @@ audioElement.addEventListener("loadeddata", () => {
     else {
         audioElement.pause()
     }
+
+    localStorage.setItem("currentSong", `${currentSong}`);
 });
 
 audioElement.addEventListener("ended", () => {
@@ -136,7 +141,7 @@ function pageSetUp() {
     let imgDiv = document.querySelector(".song-cover");
     let newImg = document.createElement("img");
 
-    newImg.setAttribute('src', playList[0].cover);
+    newImg.setAttribute('src', playList[currentSong].cover);
     imgDiv.appendChild(newImg);
 
     document.querySelector(".song-name").textContent = playList[currentSong].name;
