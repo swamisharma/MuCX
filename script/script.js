@@ -16,11 +16,13 @@ play_pause.addEventListener("click", () => {
         play_pause.classList.remove("fa-play");
         play_pause.classList.add("fa-pause");
         audioElement.play();
+        document.title = playList[currentSong].name;
     }
     else {
         play_pause.classList.remove("fa-pause");
         play_pause.classList.add("fa-play");
         audioElement.pause()
+        document.title = "Mu-CX";
     }
 });
 
@@ -93,6 +95,7 @@ audioElement.addEventListener("ended", () => {
 });
 
 audioElement.addEventListener("loadstart", () => {
+    slider.value = 0;
     document.querySelector(".play-pause").style.display = "none";
     document.querySelector(".buttons img").style.display = "flex";
 });
@@ -131,6 +134,7 @@ function onSongChange() {
 
     document.querySelector(".song-name").textContent = playList[currentSong].name;
     document.querySelector(".song-artist").textContent = playList[currentSong].artist;
+    document.title = playList[currentSong].name;
 };
 
 function changeSongMedia() {
