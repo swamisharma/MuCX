@@ -441,6 +441,10 @@ input:focus {
         font-size: 12px;
     }
 
+    .song-extra-btns {
+        margin-top: 8%;
+    }
+
     .slider-buttons {
         display: flex;
         flex-direction: column-reverse;
@@ -562,6 +566,7 @@ input:focus {
 
     .song-title .song-extra-btns {
         width: 100%;
+        margin-top: 8%;
     }
 
     .slider-buttons {
@@ -692,6 +697,7 @@ input:focus {
 
     .song-title .song-extra-btns {
         width: 100%;
+        margin-top: 10%;
     }
 
     .slider-buttons {

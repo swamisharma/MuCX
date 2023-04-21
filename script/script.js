@@ -167,7 +167,7 @@ loopBtn.addEventListener("click", () => {
 
 shareBtn.addEventListener("click", () => {
     navigator.clipboard.writeText(`${window.location.href}`);
-    alert("Share song with your friends!!!")
+    alert("Link copied, Share song with your friends!!!")
 });
 
 //DEBOUNCE-AND-OTHER-CALLBACK-FUNC
