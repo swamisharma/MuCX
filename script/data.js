@@ -20,106 +20,6 @@ const playlist = [
         liked: false,
     },
     {
-        name: "Often",
-        cover: "https://i.pinimg.com/originals/03/8b/a9/038ba90656d982900046f7e518554f96.jpg",
-        artist: "The Weeknd",
-        audio:
-            "https://dl.sndup.net/6w2y/Often.mp3",
-        color: ["#1C1A1D", "#757376"],
-
-        liked: false,
-    },
-    {
-        name: "Alone Again",
-        cover: "https://preview.redd.it/m2gtz1fut2161.png?auto=webp&s=7c6b4c6f312be28f555dd4d3edf96870940e78fe",
-        artist: "The Weeknd",
-        audio:
-            "https://dl.sndup.net/dbvg/Alone%20Again.mp3",
-        color: ["#1C1A1D", "#757376"],
-
-        liked: false,
-    },
-    {
-        name: "Ordinary Life",
-        cover: "https://i.redd.it/kxeqgg6dvua01.jpg",
-        artist: "The Weeknd",
-        audio:
-            "https://dl.sndup.net/dv9g/Ordinary%20Life.mp3",
-        color: ["#1C1A1D", "#757376"],
-
-        liked: false,
-    },
-    {
-        name: "Double Fantasy",
-        cover: "https://static.stereogum.com/uploads/2023/04/342225457_165735042750477_5599342028108595311_n-1682020525.jpg",
-        artist: "The Weeknd | Future",
-        audio:
-            "https://dl.sndup.net/b7f2/Double%20Fantasy.mp3",
-        color: ["#1C1A1D", "#757376"],
-
-        liked: false,
-    },
-    {
-        name: "Twenty Eight",
-        cover: "https://i1.sndcdn.com/artworks-000033072590-kefukl-t500x500.jpg",
-        artist: "The Weeknd",
-        audio:
-            "https://dl.sndup.net/d2jz/Twenty%20Eight.mp3",
-        color: ["#1C1A1D", "#757376"],
-
-        liked: false,
-    },
-    {
-        name: "Some Way",
-        cover: "https://i1.sndcdn.com/artworks-000533692155-o5q08r-t500x500.jpg",
-        artist: "NAV ft. The Weeknd",
-        audio:
-            "https://dl.sndup.net/k8tw/Some%20Way.mp3",
-        color: ["#1C1A1D", "#757376"],
-
-        liked: false,
-    },
-    {
-        name: "Kiss Land",
-        cover: "https://f4.bcbits.com/img/a1384361635_10.jpg",
-        artist: "The Weeknd",
-        audio:
-            "https://dl.sndup.net/bckp/Kiss%20Land.mp3",
-        color: ["#1C1A1D", "#757376"],
-
-        liked: false,
-    },
-    {
-        name: "Low Life",
-        cover: "https://f4.bcbits.com/img/a2054744171_65",
-        artist: "Future ft. The Weeknd",
-        audio:
-            "https://dl.sndup.net/qtbv/Low%20Life.mp3",
-        color: ["#1C1A1D", "#757376"],
-
-        liked: false,
-    },
-    {
-        name: "Lost In Fire",
-        cover: "https://karencivil.com/wp-content/uploads/2019/01/IMG_A2C8AFCA632F-1.jpeg",
-        artist: "Gesaffelstein & The Weeknd",
-        audio:
-            "https://dl.sndup.net/q3fn/Lost%20in%20the%20Fire.mp3",
-        color: ["#1C1A1D", "#757376"],
-
-        liked: false,
-    },
-    {
-        name: "Faith",
-        cover: "https://i.redd.it/4zyp9m9fab451.png",
-        artist: "The Weeknd",
-        audio:
-            "https://dl.sndup.net/cs4q/Faith.mp3",
-        color: ["#1C1A1D", "#757376"],
-
-        liked: false,
-    },
-    {
         name: "Last Breath",
         cover: "https://i1.sndcdn.com/artworks-000506100843-y0h335-t500x500.jpg",
         artist: "Future",
@@ -997,6 +897,16 @@ const playlist = [
         liked: false,
     },
     {
+        name: "Tu hi meri shab hai",
+        cover: "https://i0.wp.com/99lyricstore.com/wp-content/uploads/2021/04/Tu2Bhi2Bmeri2Bshab2Bhai2BHindi2BLove2BSong2BLyrics252C2BSung2BBy2BK.K.jpg",
+        artist: "KK",
+        audio:
+            "https://dl.sndup.net/vk6t/Tu%20Hi%20Meri%20Shab%20Hai.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
         name: "Ram Siya Ram (Reverbed)",
         cover: "https://i1.sndcdn.com/artworks-Lgdaig9D73SzDpv3-RvGJJQ-t500x500.jpg",
         artist: "Paras Sharma",
@@ -1177,11 +1087,131 @@ const playlist = [
         liked: false,
     },
     {
-        name: "Tu hi meri shab hai",
-        cover: "https://i0.wp.com/99lyricstore.com/wp-content/uploads/2021/04/Tu2Bhi2Bmeri2Bshab2Bhai2BHindi2BLove2BSong2BLyrics252C2BSung2BBy2BK.K.jpg",
-        artist: "KK",
+        name: "Love Me Harder",
+        cover: "https://i.scdn.co/image/ab67616d0000b273deec12a28d1e336c5052e9aa",
+        artist: "Ariana Grande The Weeknd",
         audio:
-            "https://dl.sndup.net/vk6t/Tu%20Hi%20Meri%20Shab%20Hai.mp3",
+            "https://dl.sndup.net/mdqz/Love%20Me%20Harder.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Die For You",
+        cover: "https://images.genius.com/5964711b238e9f03cfe27921c92f28aa.736x736x1.png",
+        artist: "The Weeknd",
+        audio:
+            "https://dl.sndup.net/kp7m/Die%20For%20You.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Nothing without you",
+        cover: "https://i1.sndcdn.com/artworks-000504769563-ectoyh-t500x500.jpg",
+        artist: "The Weeknd",
+        audio:
+            "https://dl.sndup.net/jmtz/Nothing%20Without%20You.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Often",
+        cover: "https://i.pinimg.com/originals/03/8b/a9/038ba90656d982900046f7e518554f96.jpg",
+        artist: "The Weeknd",
+        audio:
+            "https://dl.sndup.net/6w2y/Often.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Alone Again",
+        cover: "https://preview.redd.it/m2gtz1fut2161.png?auto=webp&s=7c6b4c6f312be28f555dd4d3edf96870940e78fe",
+        artist: "The Weeknd",
+        audio:
+            "https://dl.sndup.net/dbvg/Alone%20Again.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Ordinary Life",
+        cover: "https://i.redd.it/kxeqgg6dvua01.jpg",
+        artist: "The Weeknd",
+        audio:
+            "https://dl.sndup.net/dv9g/Ordinary%20Life.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Double Fantasy",
+        cover: "https://static.stereogum.com/uploads/2023/04/342225457_165735042750477_5599342028108595311_n-1682020525.jpg",
+        artist: "The Weeknd | Future",
+        audio:
+            "https://dl.sndup.net/b7f2/Double%20Fantasy.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Twenty Eight",
+        cover: "https://i1.sndcdn.com/artworks-000033072590-kefukl-t500x500.jpg",
+        artist: "The Weeknd",
+        audio:
+            "https://dl.sndup.net/d2jz/Twenty%20Eight.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Some Way",
+        cover: "https://i1.sndcdn.com/artworks-000533692155-o5q08r-t500x500.jpg",
+        artist: "NAV ft. The Weeknd",
+        audio:
+            "https://dl.sndup.net/k8tw/Some%20Way.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Kiss Land",
+        cover: "https://f4.bcbits.com/img/a1384361635_10.jpg",
+        artist: "The Weeknd",
+        audio:
+            "https://dl.sndup.net/bckp/Kiss%20Land.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Low Life",
+        cover: "https://f4.bcbits.com/img/a2054744171_65",
+        artist: "Future ft. The Weeknd",
+        audio:
+            "https://dl.sndup.net/qtbv/Low%20Life.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Lost In Fire",
+        cover: "https://karencivil.com/wp-content/uploads/2019/01/IMG_A2C8AFCA632F-1.jpeg",
+        artist: "Gesaffelstein & The Weeknd",
+        audio:
+            "https://dl.sndup.net/q3fn/Lost%20in%20the%20Fire.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Faith",
+        cover: "https://i.redd.it/4zyp9m9fab451.png",
+        artist: "The Weeknd",
+        audio:
+            "https://dl.sndup.net/cs4q/Faith.mp3",
         color: ["#1C1A1D", "#757376"],
 
         liked: false,
