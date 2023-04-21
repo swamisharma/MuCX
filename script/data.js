@@ -11,7 +11,7 @@ const playlist = [
     },
     {
         name: "Pray For Me",
-        cover: "https://i1.sndcdn.com/artworks-000332447709-iulhry-t500x500.jpg",
+        cover: "https://m.media-amazon.com/images/I/918mX9aiWmL.jpg",
         artist: "The Weeknd | Kendrick Lamar",
         audio:
             "https://dl.sndup.net/py94/Pray%20For%20Me.mp3",
@@ -20,8 +20,98 @@ const playlist = [
         liked: false,
     },
     {
+        name: "Often",
+        cover: "https://i.pinimg.com/originals/03/8b/a9/038ba90656d982900046f7e518554f96.jpg",
+        artist: "The Weeknd",
+        audio:
+            "https://dl.sndup.net/6w2y/Often.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Alone Again",
+        cover: "https://preview.redd.it/m2gtz1fut2161.png?auto=webp&s=7c6b4c6f312be28f555dd4d3edf96870940e78fe",
+        artist: "The Weeknd",
+        audio:
+            "https://dl.sndup.net/dbvg/Alone%20Again.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Ordinary Life",
+        cover: "https://i.redd.it/kxeqgg6dvua01.jpg",
+        artist: "The Weeknd",
+        audio:
+            "https://dl.sndup.net/dv9g/Ordinary%20Life.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Double Fantasy",
+        cover: "https://static.stereogum.com/uploads/2023/04/342225457_165735042750477_5599342028108595311_n-1682020525.jpg",
+        artist: "The Weeknd | Future",
+        audio:
+            "https://dl.sndup.net/b7f2/Double%20Fantasy.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Twenty Eight",
+        cover: "https://i1.sndcdn.com/artworks-000033072590-kefukl-t500x500.jpg",
+        artist: "The Weeknd",
+        audio:
+            "https://dl.sndup.net/d2jz/Twenty%20Eight.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Some Way",
+        cover: "https://i1.sndcdn.com/artworks-000533692155-o5q08r-t500x500.jpg",
+        artist: "NAV ft. The Weeknd",
+        audio:
+            "https://dl.sndup.net/k8tw/Some%20Way.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Kiss Land",
+        cover: "https://f4.bcbits.com/img/a1384361635_10.jpg",
+        artist: "The Weeknd",
+        audio:
+            "https://dl.sndup.net/bckp/Kiss%20Land.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Low Life",
+        cover: "https://f4.bcbits.com/img/a2054744171_65",
+        artist: "Future ft. The Weeknd",
+        audio:
+            "https://dl.sndup.net/qtbv/Low%20Life.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Lost In Fire",
+        cover: "https://karencivil.com/wp-content/uploads/2019/01/IMG_A2C8AFCA632F-1.jpeg",
+        artist: "Gesaffelstein & The Weeknd",
+        audio:
+            "https://dl.sndup.net/q3fn/Lost%20in%20the%20Fire.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
         name: "Faith",
-        cover: "https://pbs.twimg.com/media/FFE__aSXwAcFcSw.jpg",
+        cover: "https://i.redd.it/4zyp9m9fab451.png",
         artist: "The Weeknd",
         audio:
             "https://dl.sndup.net/cs4q/Faith.mp3",
@@ -161,17 +251,6 @@ const playlist = [
         liked: false,
     },
     {
-        name: "Mere Liye Tum Kaafi",
-        cover:
-            "https://pagalnew.com/coverimages/Mere-Liye-Tum-Kaafi-Ho-Shubh-Mangal-Zyada-Saavdhan-500-500.jpg",
-        artist: "Ayushmann Khurrana ",
-        audio:
-            "https://res.cloudinary.com/blazzingcdn/video/upload/v1638808102/Songs/Mere_Liye_Tum_Kaafi_Ho_Shubh_Mangal_Zyada_Saavdhan_320_Kbps_pmz4xh.mp3",
-        color: ["#71B5AA", "#F8415D"],
-
-        liked: false,
-    },
-    {
         name: "Are Are",
         cover:
             "https://sgdccdnems04.cdnsrv.jio.com/c.saavncdn.com/038/Makkhi-2012-500x500.jpg",
@@ -201,17 +280,6 @@ const playlist = [
         audio:
             "https://res.cloudinary.com/blazzingcdn/video/upload/v1638809150/Songs/Alan_Walker_Sabrina_Carpenter_Farruko_-_On_My_Way_Lyrics_winflu.mp4",
         color: ["#47D7F1", "#233E73"],
-
-        liked: false,
-    },
-    {
-        name: "Emptiness 💔",
-        cover:
-            "https://res.cloudinary.com/blazzingcdn/image/upload/v1638811667/Images/png_20211206_225517_0000_si0ajx.png",
-        artist: "Afrin N Rahman | Negar",
-        audio:
-            "https://res.cloudinary.com/blazzingcdn/video/upload/v1638809870/Songs/rahman_song_cduhfq.mp3",
-        color: ["#EB7664", "#5D1313"],
 
         liked: false,
     },
@@ -378,7 +446,7 @@ const playlist = [
         liked: false,
     },
     {
-        name: "Rohan Rathore - Emptiness ( Original )",
+        name: "Emptiness",
         cover:
             "https://i.pinimg.com/564x/cf/95/dc/cf95dc62b809224461b025cbbc14e544--lyrics-book-jacket.jpg",
         artist: "Gajendra Verma",
@@ -411,7 +479,7 @@ const playlist = [
     {
         name: "Dil Ibaadat",
         cover:
-            "https://www.lyricspedia.co.in/wp-content/uploads/2021/06/Screenshot_20210605-095501-01.jpeg",
+            "https://c.saavncdn.com/316/Tum-Mile-Hindi-2009-20190617160526-500x500.jpg",
         artist: "K.K",
         audio: "https://pagalnew.com/download320/7075",
         color: ["#6D4722", "#F89752"],
@@ -431,7 +499,7 @@ const playlist = [
     {
         name: "Bulleya",
         cover:
-            "https://sklktecdnems03.cdnsrv.jio.com/c.saavncdn.com/438/Bulleya-MTV-Unplugged--Hindi-2019-20190606121536-500x500.jpg",
+            "https://c.saavncdn.com/272/Bulleya-Tropical-Mix-By-Aqeel-Ali-From-Ae-Dil-Hai-Mushkil--Hindi-2016-500x500.jpg",
         artist: "Papon | Vishal-Shekhar | Irshad Kamil",
         audio: "https://pagalnew.com/download320/3977",
         color: ["#CE8A75", "#47B133"],

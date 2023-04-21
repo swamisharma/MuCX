@@ -1,12 +1,27 @@
 import playList from "./data.js";
 
 let currentSong = 0;
-if (localStorage.getItem("currentSong")){
+if (localStorage.getItem("currentSong")) {
     currentSong = parseInt(localStorage.getItem("currentSong"));
 }
+if (!isNaN(parseInt(window.location.pathname.slice(1)))) {
+    currentSong = parseInt(window.location.pathname.slice(1));
+}
+
+let likedSongs = [];
+if (!localStorage.getItem("likedSongs")) {
+    localStorage.setItem("likedSongs", JSON.stringify([]));
+}
+else {
+    likedSongs = JSON.parse(localStorage.getItem("likedSongs"));
+}
+
 let audioElement = new Audio(playList[currentSong].audio);
 let slider = document.querySelector(".slider");
 let timeSpan = document.querySelectorAll(".slider-bar span");
+const likeBtn = document.querySelector("span.favorite");
+const loopBtn = document.querySelector("span.repeat_one");
+const shareBtn = document.querySelector("span.share");
 
 //PLAY-PAUSE-TOGGLE
 const play_pause = document.querySelector(".play-pause");
@@ -87,6 +102,10 @@ audioElement.addEventListener("loadeddata", () => {
 });
 
 audioElement.addEventListener("ended", () => {
+    if (loopBtn.textContent === "repeat_one_on") {
+        audioElement.play();
+        return;
+    }
     if (currentSong < playList.length-1){
         currentSong++;
     }
@@ -98,6 +117,12 @@ audioElement.addEventListener("loadstart", () => {
     slider.value = 0;
     document.querySelector(".play-pause").style.display = "none";
     document.querySelector(".buttons img").style.display = "flex";
+    if (likedSongs.includes(currentSong)){
+        likeBtn.classList.add("favorite-filled");
+    }
+    else {
+        likeBtn.classList.remove("favorite-filled");
+    }
 });
 
 //UPDATE-SEEKBAR
@@ -113,6 +138,36 @@ audioElement.addEventListener('timeupdate', ()=>{
 slider.addEventListener('change', ()=>{
     audioElement.currentTime = slider.value * audioElement.duration/1000;
     timeSpan[0].textContent = `${Math.floor(audioElement.currentTime/60)}:${Math.floor(audioElement.currentTime%60)}`;
+});
+
+//FORWARD-BACKWARD
+
+window.addEventListener('popstate', () => {
+    currentSong = parseInt(window.location.pathname.slice(1));
+    onSongChange();
+}, false);
+
+//EXTRA-BUTTONS
+likeBtn.addEventListener("click", () => {
+    likeBtn.classList.toggle("favorite-filled");
+    if (!likedSongs.includes(currentSong)){
+        likedSongs.push(currentSong);
+    }
+    else {
+        let pos = likedSongs.indexOf(currentSong);
+        likedSongs[pos] = likedSongs[likedSongs.length-1];
+        likedSongs.pop();
+    }
+    localStorage.setItem("likedSongs",JSON.stringify(likedSongs));
+});
+
+loopBtn.addEventListener("click", () => {
+    loopBtn.textContent = (loopBtn.textContent === "repeat_one") ? "repeat_one_on" : "repeat_one";
+});
+
+shareBtn.addEventListener("click", () => {
+    navigator.clipboard.writeText(`${window.location.href}`);
+    alert("Share song with your friends!!!")
 });
 
 //DEBOUNCE-AND-OTHER-CALLBACK-FUNC
@@ -135,6 +190,7 @@ function onSongChange() {
     document.querySelector(".song-name").textContent = playList[currentSong].name;
     document.querySelector(".song-artist").textContent = playList[currentSong].artist;
     document.title = playList[currentSong].name;
+    history.pushState({}, "", `/${currentSong}`);
 };
 
 function changeSongMedia() {
@@ -151,6 +207,7 @@ function pageSetUp() {
     document.querySelector(".song-name").textContent = playList[currentSong].name;
     document.querySelector(".song-artist").textContent = playList[currentSong].artist;
     document.querySelectorAll(".playlist-song-detail")[currentSong].classList.add("current-playing");
+    history.pushState({}, "", `/${currentSong}`);
 };
 
 function highlightSongInPlaylist() {
