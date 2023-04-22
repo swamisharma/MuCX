@@ -89,7 +89,7 @@ const playlist = [
         liked: false,
     },
     {
-        name: "Kabhii Tumhhe ",
+        name: "Kabhii Tumhhe",
         cover:
             "https://pagalnew.com/coverimages/album/shershaah-2021-500-500.jpg",
         artist: "Darshan Raval",
@@ -99,7 +99,7 @@ const playlist = [
         liked: false,
     },
     {
-        name: "Mann Bharryaa 2.0",
+        name: "Mann Bharryaa",
         cover:
             "https://pagalnew.com/coverimages/mann-bharryaa-2.0-shershaah-500-500.jpg",
         artist: "B Praak",
@@ -195,7 +195,7 @@ const playlist = [
         liked: false,
     },
     {
-        name: "Kasam Ki Kasam ",
+        name: "Kasam Ki Kasam",
         cover:
             "https://pagalnew.com/coverimages/kasam-ki-kasam-main-prem-ki-diwani-hoon-500-500.jpg",
         artist: "Shaan | K. S. Chithra ",
@@ -226,7 +226,7 @@ const playlist = [
         liked: false,
     },
     {
-        name: "Mann Mera (Reprise) ",
+        name: "Mann Mera (Reprise)",
         cover: "https://i.scdn.co/image/ab6761610000e5eb41d0a40b84280ac087e7b7ec",
         artist: "JalRaj | Gajendra Verma",
         audio:
@@ -246,7 +246,7 @@ const playlist = [
         liked: false,
     },
     {
-        name: "Bewafa Tera Masoom Chehra ",
+        name: "Bewafa Tera Masoom Chehra",
         cover:
             "https://pagalnew.com/coverimages/Bewafa-Tera-Masoom-Chehra-Jubin-Nautiyal-500-500.jpg",
         artist: "Jubin Nautiyal | Rochak Kohli",
@@ -256,7 +256,7 @@ const playlist = [
         liked: false,
     },
     {
-        name: "Kaabil Hoon ",
+        name: "Kaabil Hoon",
         cover:
             "https://pagalnew.com/coverimages/Kaabil-Hoon-Jubin-Nautiyal-500-500.jpg",
         artist: "Jubin Nautiyal, Palak Muchhal ",
@@ -266,7 +266,7 @@ const playlist = [
         liked: false,
     },
     {
-        name: "Lut Gaye ",
+        name: "Lut Gaye",
         cover:
             "https://pagalnew.com/coverimages/lut-gaye-jubin-nautiyal-500-500.jpg",
         artist: "Jubin Nautiyal ",
@@ -616,7 +616,7 @@ const playlist = [
         liked: false,
     },
     {
-        name: "Waalian: Harnoor",
+        name: "Waalian",
         cover:
             "https://a10.gaanacdn.com/images/albums/24/4734224/crop_480x480_4734224.jpg",
         artist: "Harnoor",
@@ -656,7 +656,7 @@ const playlist = [
         liked: false,
     },
     {
-        name: "Feelings - Vatsala",
+        name: "Feelings",
         cover:
             "https://i1.sndcdn.com/artworks-3A1GnE9Ymzf2JpMG-TZNCSA-t500x500.jpg",
         artist: "Vatsala",
@@ -706,7 +706,7 @@ const playlist = [
         liked: false,
     },
     {
-        name: "Pehla Nasha [Reverb] | Mood 90's",
+        name: "Pehla Nasha",
         cover:
             "https://direct.rhapsody.com/imageserver/images/alb.199765156/600x600.jpg",
         artist: "Sadhana Sargam | Udit Narayan",
@@ -717,7 +717,7 @@ const playlist = [
         liked: false,
     },
     {
-        name: "Main Rang Sharboton Ka (Acoustic Lofi)",
+        name: "Main Rang Sharboton Ka",
         cover: "https://i1.sndcdn.com/artworks-000177278203-qh76iz-t500x500.jpg",
         artist: "Atif Aslam, Chinmayi Sripada",
         audio:
@@ -807,16 +807,6 @@ const playlist = [
         liked: false,
     },
     {
-        name: "Creepin",
-        cover: "https://i.scdn.co/image/ab67616d0000b273fac968e3a62f56e030b3931d",
-        artist: "The Weeknd | Diddy",
-        audio:
-            "https://dl.sndup.net/fr4f/Creepin'.mp3",
-        color: ["#1C1A1D", "#757376"],
-
-        liked: false,
-    },
-    {
         name: "Dil nu",
         cover: "https://www.pagalwoird.com/wp-content/uploads/2022/10/maxresdefault-22__01.jpg",
         artist: "AP Dhillon",
@@ -867,26 +857,6 @@ const playlist = [
         liked: false,
     },
     {
-        name: "Moth to A Flame",
-        cover: "https://i.redd.it/op2ybwfjhnv71.jpg",
-        artist: "The Weeknd",
-        audio:
-            "https://dl.sndup.net/r47d/Moth%20To%20A%20Flame.mp3",
-        color: ["#1C1A1D", "#757376"],
-
-        liked: false,
-    },
-    {
-        name: "Nothing Compares | Final Lullaby (Slowed)",
-        cover: "https://i.redd.it/op2ybwfjhnv71.jpg",
-        artist: "The Weeknd",
-        audio:
-            "https://dl.sndup.net/ty8h/Nothing%20Compares%20%20Final%20Lullaby.mp3",
-        color: ["#1C1A1D", "#757376"],
-
-        liked: false,
-    },
-    {
         name: "O Sanam",
         cover: "https://images.genius.com/d57855da6a6000e9683cda0a12089ace.999x999x1.jpg",
         artist: "Lucky Ali",
@@ -922,6 +892,16 @@ const playlist = [
         artist: "Rekha Bhardwaj",
         audio:
             "https://dl.sndup.net/pdbm/RANJHA%20RANJHA.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Shikdum",
+        cover: "https://a10.gaanacdn.com/gn_img/albums/0wrb4qNKLg/wrb4L0ybLg/size_l.jpg",
+        artist: "Shreya Ghoshal | Shaan",
+        audio:
+            "https://dl.sndup.net/xkjz/Shikdum.mp3",
         color: ["#1C1A1D", "#757376"],
 
         liked: false,
@@ -967,21 +947,41 @@ const playlist = [
         liked: false,
     },
     {
-        name: "Shikdum",
-        cover: "https://a10.gaanacdn.com/gn_img/albums/0wrb4qNKLg/wrb4L0ybLg/size_l.jpg",
-        artist: "Shreya Ghoshal | Shaan",
-        audio:
-            "https://dl.sndup.net/xkjz/Shikdum.mp3",
-        color: ["#1C1A1D", "#757376"],
-
-        liked: false,
-    },
-    {
         name: "Sober",
         cover: "https://i1.sndcdn.com/artworks-000133092739-p5rarl-t500x500.jpg",
         artist: "Selena Gomez",
         audio:
             "https://dl.sndup.net/dgkd/Sober.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Moth to A Flame",
+        cover: "https://i.redd.it/op2ybwfjhnv71.jpg",
+        artist: "The Weeknd",
+        audio:
+            "https://dl.sndup.net/r47d/Moth%20To%20A%20Flame.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Nothing Compares | Final Lullaby (Slowed)",
+        cover: "https://i.redd.it/op2ybwfjhnv71.jpg",
+        artist: "The Weeknd",
+        audio:
+            "https://dl.sndup.net/ty8h/Nothing%20Compares%20%20Final%20Lullaby.mp3",
+        color: ["#1C1A1D", "#757376"],
+
+        liked: false,
+    },
+    {
+        name: "Creepin",
+        cover: "https://i.scdn.co/image/ab67616d0000b273fac968e3a62f56e030b3931d",
+        artist: "The Weeknd | Diddy",
+        audio:
+            "https://dl.sndup.net/fr4f/Creepin'.mp3",
         color: ["#1C1A1D", "#757376"],
 
         liked: false,
@@ -1089,7 +1089,7 @@ const playlist = [
     {
         name: "Love Me Harder",
         cover: "https://i.scdn.co/image/ab67616d0000b273deec12a28d1e336c5052e9aa",
-        artist: "Ariana Grande The Weeknd",
+        artist: "Ariana Grande & The Weeknd",
         audio:
             "https://dl.sndup.net/mdqz/Love%20Me%20Harder.mp3",
         color: ["#1C1A1D", "#757376"],

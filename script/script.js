@@ -1,11 +1,24 @@
 import playList from "./data.js";
 
 let currentSong = 0;
-if (localStorage.getItem("currentSong")) {
-    currentSong = parseInt(localStorage.getItem("currentSong"));
+if (window.location.pathname.slice(1)) {
+    let songIndex;
+    let uri = decodeURI(window.location.pathname.slice(1));
+
+    playList.forEach((song, index) => {
+        if (song.name === uri){
+            songIndex = index;
+        } 
+    })
+
+    if (!songIndex) {
+        songIndex = isNaN(localStorage.getItem("currentSong")) ? 0 : parseInt(localStorage.getItem("currentSong"));
+    }
+
+    currentSong = songIndex;
 }
-if (!isNaN(parseInt(window.location.pathname.slice(1)))) {
-    currentSong = parseInt(window.location.pathname.slice(1));
+else if (localStorage.getItem("currentSong")) {
+    currentSong = parseInt(localStorage.getItem("currentSong"));
 }
 
 let likedSongs = [];
@@ -170,6 +183,17 @@ shareBtn.addEventListener("click", () => {
     alert("Link copied, Share song with your friends!!!")
 });
 
+//EXTERNAL-PLAY-PAUSE
+audioElement.addEventListener("pause", () => {
+    play_pause.classList.add("fa-pause");
+    play_pause.classList.remove("fa-play");
+});
+
+audioElement.addEventListener("play", () => {
+    play_pause.classList.remove("fa-play");
+    play_pause.classList.add("fa-pause");
+});
+ 
 //DEBOUNCE-AND-OTHER-CALLBACK-FUNC
 function debounce(func, timeout=300) {
     let timer;
@@ -190,7 +214,7 @@ function onSongChange() {
     document.querySelector(".song-name").textContent = playList[currentSong].name;
     document.querySelector(".song-artist").textContent = playList[currentSong].artist;
     document.title = playList[currentSong].name;
-    history.pushState({}, "", `/${currentSong}`);
+    history.pushState({}, "", `/${encodeURI(playList[currentSong].name)}`);
 };
 
 function changeSongMedia() {
@@ -207,7 +231,7 @@ function pageSetUp() {
     document.querySelector(".song-name").textContent = playList[currentSong].name;
     document.querySelector(".song-artist").textContent = playList[currentSong].artist;
     document.querySelectorAll(".playlist-song-detail")[currentSong].classList.add("current-playing");
-    history.pushState({}, "", `/${currentSong}`);
+    history.pushState({}, "", `/${encodeURI(playList[currentSong].name)}`);
 };
 
 function highlightSongInPlaylist() {
