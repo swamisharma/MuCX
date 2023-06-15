@@ -65,6 +65,9 @@ backButton.addEventListener("click", () => {
     if (currentSong > 0){
         currentSong--;
     }
+    else {
+        currentSong = playList.length-1;
+    }
     onSongChange();
     debounce(changeSongMedia());
 });
@@ -122,8 +125,11 @@ audioElement.addEventListener("ended", () => {
     if (currentSong < playList.length-1){
         currentSong++;
     }
+    else {
+        currentSong = 0;
+    }
     onSongChange();
-    audioElement.src = playList[currentSong].audio;
+    changeSongMedia();
 });
 
 audioElement.addEventListener("loadstart", () => {
@@ -183,16 +189,23 @@ shareBtn.addEventListener("click", () => {
     alert("Link copied, Share song with your friends!!!")
 });
 
-//EXTERNAL-PLAY-PAUSE
-audioElement.addEventListener("pause", () => {
-    play_pause.classList.add("fa-pause");
-    play_pause.classList.remove("fa-play");
-});
-
-audioElement.addEventListener("play", () => {
-    play_pause.classList.remove("fa-play");
-    play_pause.classList.add("fa-pause");
-});
+//KEYBOARD 
+document.addEventListener('keydown', (e) => {
+    if (e.key === ' ') {
+        if (play_pause.classList.contains("fa-play")){
+            play_pause.classList.remove("fa-play");
+            play_pause.classList.add("fa-pause");
+            audioElement.play();
+            document.title = playList[currentSong].name;
+        }
+        else {
+            play_pause.classList.remove("fa-pause");
+            play_pause.classList.add("fa-play");
+            audioElement.pause()
+            document.title = "Mu-CX";
+        }
+    }
+})
  
 //DEBOUNCE-AND-OTHER-CALLBACK-FUNC
 function debounce(func, timeout=300) {
